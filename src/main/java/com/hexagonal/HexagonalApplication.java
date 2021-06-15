@@ -1,13 +1,13 @@
-package com.hexagonal.initialha;
+package com.hexagonal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class InitialhaApplication {
+public class HexagonalApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(InitialhaApplication.class, args);
+		SpringApplication.run(HexagonalApplication.class, args);
 	}
 
 }

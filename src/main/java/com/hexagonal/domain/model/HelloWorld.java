@@ -1,4 +1,4 @@
-package com.hexagonal.initialha.domain.model;
+package com.hexagonal.domain.model;
 
 import lombok.Value;
 

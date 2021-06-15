@@ -1,7 +1,7 @@
-package com.hexagonal.initialha.domain.service;
+package com.hexagonal.domain.service;
 
-import com.hexagonal.initialha.domain.ports.HelloWorldPrimaryPort;
-import com.hexagonal.initialha.domain.ports.StoredHelloWorldSecondaryPort;
+import com.hexagonal.domain.ports.HelloWorldPrimaryPort;
+import com.hexagonal.domain.ports.StoredHelloWorldSecondaryPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

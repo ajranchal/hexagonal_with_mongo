@@ -1,10 +1,10 @@
-package com.hexagonal.initialha;
+package com.hexagonal;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class InitialhaApplicationTests {
+class HexagonalApplicationTests {
 
 	@Test
 	void contextLoads() {

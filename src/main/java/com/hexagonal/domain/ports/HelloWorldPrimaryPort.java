@@ -1,4 +1,4 @@
-package com.hexagonal.initialha.domain.ports;
+package com.hexagonal.domain.ports;
 
 public interface HelloWorldPrimaryPort {
 

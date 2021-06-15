@@ -1,12 +1,11 @@
-package com.hexagonal.initialha.infrastructure.db.mongodb.adapter;
+package com.hexagonal.infrastructure.db.mongodb.adapter;
 
-import com.hexagonal.initialha.domain.ports.StoredHelloWorldSecondaryPort;
-import com.hexagonal.initialha.infrastructure.db.mongodb.model.HelloWorldEntity;
-import com.hexagonal.initialha.infrastructure.db.mongodb.repository.HelloWorldRepository;
+import com.hexagonal.infrastructure.db.mongodb.model.HelloWorldEntity;
+import com.hexagonal.domain.ports.StoredHelloWorldSecondaryPort;
+import com.hexagonal.infrastructure.db.mongodb.repository.HelloWorldRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

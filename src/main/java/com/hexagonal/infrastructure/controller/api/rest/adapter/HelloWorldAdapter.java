@@ -1,6 +1,6 @@
-package com.hexagonal.initialha.infrastructure.controller.api.rest.adapter;
+package com.hexagonal.infrastructure.controller.api.rest.adapter;
 
-import com.hexagonal.initialha.domain.ports.HelloWorldPrimaryPort;
+import com.hexagonal.domain.ports.HelloWorldPrimaryPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
