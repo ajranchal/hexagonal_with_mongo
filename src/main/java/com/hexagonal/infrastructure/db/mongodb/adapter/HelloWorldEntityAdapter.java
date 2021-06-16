@@ -29,8 +29,6 @@ public class HelloWorldEntityAdapter implements StoredHelloWorldSecondaryPort {
 
     @Override
     public List<String> getAll() {
-        System.out.println(helloWorldRepository.findAll());
-        System.out.println(helloWorldRepository.getHelloWorldByLanguage("SPA"));
 
         return helloWorldRepository.findAll().stream().map(HelloWorldEntity::getHello).collect(Collectors.toList());
     }

@@ -21,7 +21,6 @@ public class MongoDBConfiguration {
 
 
     public @Bean MongoClient mongoClient() {
-        System.out.println("mongodb+srv://"+user+":"+password+"@"+url);
         return MongoClients.create("mongodb+srv://"+user+":"+password+"@"+url);
     }
 }

@@ -37,7 +37,6 @@ public class HelloWorldResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @RequestMapping("/test")
     public String test(){
-        System.out.println("Hello");
         return "Hello";
 
 
