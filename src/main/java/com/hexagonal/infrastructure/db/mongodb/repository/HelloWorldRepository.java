@@ -1,6 +1,6 @@
-package com.hexagonal.initialha.infrastructure.db.mongodb.repository;
+package com.hexagonal.infrastructure.db.mongodb.repository;
 
-import com.hexagonal.initialha.infrastructure.db.mongodb.model.HelloWorldEntity;
+import com.hexagonal.infrastructure.db.mongodb.model.HelloWorldEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 

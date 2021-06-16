@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.hexagonal</groupId>
-	<artifactId>initialha</artifactId>
+	<artifactId>hexagonal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>initialha</name>
+	<name>hexagonal</name>
 	<description>Example Hexagonal Architecture</description>
 	<properties>
 		<java.version>8</java.version>

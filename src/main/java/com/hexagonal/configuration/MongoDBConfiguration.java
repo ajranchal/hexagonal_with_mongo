@@ -1,4 +1,4 @@
-package com.hexagonal.initialha.configuration;
+package com.hexagonal.configuration;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;

@@ -1,4 +1,4 @@
-package com.hexagonal.initialha.infrastructure.db.mongodb.model;
+package com.hexagonal.infrastructure.db.mongodb.model;
 
 
 import lombok.AllArgsConstructor;
