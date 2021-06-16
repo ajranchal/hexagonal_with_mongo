@@ -16,19 +16,23 @@ public class HelloWorldEntityAdapter implements StoredHelloWorldSecondaryPort {
     private HelloWorldRepository helloWorldRepository;
 
     @Override
-    public String getHelloWorldById (String id){
+    public String getHelloWorldById(String id) {
         return helloWorldRepository.getHelloWorldById(id).getHello();
     }
 
     @Override
     public String getHelloWorldByLanguage(String language) {
-        return helloWorldRepository.getHelloWorldByLanguage(language).getHello();
+        HelloWorldEntity entity = helloWorldRepository.getHelloWorldByLanguage(language);
+        if(entity != null) return entity.getHello();
+        return "";
     }
 
     @Override
     public List<String> getAll() {
         System.out.println(helloWorldRepository.findAll());
-        return helloWorldRepository.findAll().stream().map(HelloWorldEntity::getLanguage).collect(Collectors.toList());
+        System.out.println(helloWorldRepository.getHelloWorldByLanguage("SPA"));
+
+        return helloWorldRepository.findAll().stream().map(HelloWorldEntity::getHello).collect(Collectors.toList());
     }
 
 

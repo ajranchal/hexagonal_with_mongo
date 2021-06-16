@@ -1,6 +1,8 @@
 package com.hexagonal.domain.ports;
 
+import java.util.Optional;
+
 public interface HelloWorldPrimaryPort {
 
-    String helloWorld(String language);
+    Optional<String> helloWorld(String language);
 }

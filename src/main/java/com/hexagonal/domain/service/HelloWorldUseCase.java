@@ -5,7 +5,8 @@ import com.hexagonal.domain.ports.StoredHelloWorldSecondaryPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.stream.Collectors;
+import java.util.Optional;
+
 
 @Component
 public class HelloWorldUseCase implements HelloWorldPrimaryPort {
@@ -14,8 +15,9 @@ public class HelloWorldUseCase implements HelloWorldPrimaryPort {
     private StoredHelloWorldSecondaryPort storedHelloWorldSecondaryPort;
 
     @Override
-    public String helloWorld(String language) {
-        return storedHelloWorldSecondaryPort.getAll().stream().filter(s -> s.equals(language)).collect(Collectors.joining());
+    public Optional<String> helloWorld(String language) {
+
+        return Optional.of(storedHelloWorldSecondaryPort.getHelloWorldByLanguage(language));
 
     }
 }
