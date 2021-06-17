@@ -2,7 +2,6 @@ This repository is created to assemble a Hexagonal Architecture archetype.
 
 # Intro:
 The functionality it offers:
-Query a HelloWorld message in MongoDB
 Launch a call to Producer to generate an event in a Kafka topic and have the Consumer save it in MongoDB.
 
 We need to:
@@ -17,7 +16,7 @@ profile: local
 $ bin/zookeeper-server-start.sh config/zookeeper.properties
 $ bin/kafka-server-start.sh config/server.properties
 
-# Endpoints:
+# Endpoint:
 
 Test Kafka
 POST - http://localhost:9000/kafka/publish
@@ -26,8 +25,6 @@ POST - http://localhost:9000/kafka/publish
       "message": "Test Kafka"
     }
 
-Test MongoDB (get)
-GET - http://localhost:9000/hello/world/ESP
 
 # Resources:
 
