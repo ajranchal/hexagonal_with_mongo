@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@ConfigurationProperties(prefix = "spring.data.mongodb")
+@ConfigurationProperties(prefix = "mongodb.config")
 @Data
 public class MongoDBConfiguration {
 
@@ -21,7 +21,6 @@ public class MongoDBConfiguration {
 
 
     public @Bean MongoClient mongoClient() {
-        System.out.println("mongodb+srv://"+user+":"+password+"@"+url);
         return MongoClients.create("mongodb+srv://"+user+":"+password+"@"+url);
     }
 }

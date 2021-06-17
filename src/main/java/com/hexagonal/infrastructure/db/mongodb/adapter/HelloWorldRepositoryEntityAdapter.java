@@ -1,7 +1,7 @@
 package com.hexagonal.infrastructure.db.mongodb.adapter;
 
 import com.hexagonal.infrastructure.db.mongodb.model.HelloWorldEntity;
-import com.hexagonal.domain.ports.StoredHelloWorldSecondaryPort;
+import com.hexagonal.domain.ports.secondary.HelloWorldRepositorySecondaryPort;
 import com.hexagonal.infrastructure.db.mongodb.repository.HelloWorldRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class HelloWorldEntityAdapter implements StoredHelloWorldSecondaryPort {
+public class HelloWorldRepositoryEntityAdapter implements HelloWorldRepositorySecondaryPort {
 
     @Autowired
     private HelloWorldRepository helloWorldRepository;
@@ -29,8 +29,6 @@ public class HelloWorldEntityAdapter implements StoredHelloWorldSecondaryPort {
 
     @Override
     public List<String> getAll() {
-        System.out.println(helloWorldRepository.findAll());
-        System.out.println(helloWorldRepository.getHelloWorldByLanguage("SPA"));
 
         return helloWorldRepository.findAll().stream().map(HelloWorldEntity::getHello).collect(Collectors.toList());
     }

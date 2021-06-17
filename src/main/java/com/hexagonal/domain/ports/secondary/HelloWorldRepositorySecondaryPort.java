@@ -1,8 +1,8 @@
-package com.hexagonal.domain.ports;
+package com.hexagonal.domain.ports.secondary;
 
 import java.util.List;
 
-public interface StoredHelloWorldSecondaryPort {
+public interface HelloWorldRepositorySecondaryPort {
 
     String getHelloWorldById(String id);
     String getHelloWorldByLanguage(String language);

@@ -1,4 +1,4 @@
-package com.hexagonal.domain.ports;
+package com.hexagonal.domain.ports.primary;
 
 import java.util.Optional;
 

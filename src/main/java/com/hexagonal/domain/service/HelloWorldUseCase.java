@@ -1,7 +1,7 @@
 package com.hexagonal.domain.service;
 
-import com.hexagonal.domain.ports.HelloWorldPrimaryPort;
-import com.hexagonal.domain.ports.StoredHelloWorldSecondaryPort;
+import com.hexagonal.domain.ports.primary.HelloWorldPrimaryPort;
+import com.hexagonal.domain.ports.secondary.HelloWorldRepositorySecondaryPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -12,12 +12,12 @@ import java.util.Optional;
 public class HelloWorldUseCase implements HelloWorldPrimaryPort {
 
     @Autowired
-    private StoredHelloWorldSecondaryPort storedHelloWorldSecondaryPort;
+    private HelloWorldRepositorySecondaryPort helloWorldRepositorySecondaryPort;
 
     @Override
     public Optional<String> helloWorld(String language) {
 
-        return Optional.of(storedHelloWorldSecondaryPort.getHelloWorldByLanguage(language));
+        return Optional.of(helloWorldRepositorySecondaryPort.getHelloWorldByLanguage(language));
 
     }
 }

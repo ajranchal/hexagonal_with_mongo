@@ -1,0 +1,23 @@
+server:
+  port: 9000
+kafka:
+  bootstrap-address: localhost:9092
+  consumer:
+    bootstrap-servers: localhost:9092
+    group-id: group_id
+    auto-offset-reset: earliest
+    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  producer:
+    bootstrap-servers: localhost:9092
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  topic-name: example
+mongodb:
+  config:
+    user: test
+    password: test
+    database: initial
+    port: 27017
+    url: initialha0.mqyld.mongodb.net/initial?retryWrites=true&w=majority
+
