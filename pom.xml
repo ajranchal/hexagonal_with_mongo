@@ -16,6 +16,9 @@
 	<properties>
 		<java.version>8</java.version>
 		<spring-cloud.version>2020.0.3</spring-cloud.version>
+		<profiles.base.config.resources>
+			${project.basedir}${file.separator}conf${file.separator}src${file.separator}${file.separator}main${file.separator}environments
+		</profiles.base.config.resources>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -61,13 +64,39 @@
 			</plugin>
 		</plugins>
 	</build>
-
 	<profiles>
 		<profile>
-			<id>xtest</id>
+			<id>local</id>
 			<properties>
 				<maven.test.skip>true</maven.test.skip>
 			</properties>
+			<build>
+				<resources>
+					<resource>
+						<directory>${profiles.base.config.resources}${file.separator}local</directory>
+						<filtering>true</filtering>
+					</resource>
+				</resources>
+				<plugins>
+					<plugin>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-maven-plugin</artifactId>
+						<configuration>
+							<executable>true</executable>
+							<layout>ZIP</layout>
+							<addResources>false</addResources>
+							<embeddedLaunchScriptProperties>
+								<mode>service</mode>
+							</embeddedLaunchScriptProperties>
+							<profiles>
+								<!-- active spring boot profile-->
+								<profile>local</profile> <!-- (2) -->
+							</profiles>
+							<fork>false</fork>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
 		</profile>
 	</profiles>
 </project>

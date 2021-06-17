@@ -18,7 +18,7 @@ public class ExampleConsumer {
     @Autowired
     private ProcessIncomingEventsPrimaryPort processIncomingEventsPrimaryPort;
 
-    @KafkaListener(topics = "${spring.kafka.topic-name}", groupId = "${spring.kafka.consumer.group-id}")
+    @KafkaListener(topics = "${kafka.topic-name}", groupId = "${kafka.consumer.group-id}")
     public void consume(ConsumerRecord<?, ?> consumerRecord) throws IOException {
         log.info("received payload='{}'", consumerRecord.toString());
         if(consumerRecord != null || !consumerRecord.toString().equals("")) {

@@ -13,10 +13,10 @@ import java.util.Map;
 @Configuration
 public class KafkaConfiguration {
 
-    @Value(value = "${spring.kafka.bootstrap-address}")
+    @Value(value = "${kafka.bootstrap-address}")
     private String bootstrapAddress;
 
-    @Value(value = "${spring.kafka.topic-name}")
+    @Value(value = "${kafka.topic-name}")
     private String topicName;
 
     @Bean
