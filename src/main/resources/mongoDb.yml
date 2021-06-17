@@ -1,8 +1,7 @@
 spring:
   data:
     mongodb:
-      authentication-database: admin
-      username: test
+      user: test
       password: test
       database: initial
       port: 27017
