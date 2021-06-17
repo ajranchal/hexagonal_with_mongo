@@ -3,7 +3,7 @@ package com.hexagonal.infrastructure.db.mongodb.adapter;
 import com.hexagonal.domain.model.Event;
 import com.hexagonal.domain.ports.secondary.SaveEventSecondaryPort;
 import com.hexagonal.infrastructure.db.mongodb.model.KafkaExampleEventEntity;
-import com.hexagonal.infrastructure.db.mongodb.repository.KafkaEventsRepository;
+import com.hexagonal.infrastructure.queue.kafka.producer.repository.KafkaEventsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

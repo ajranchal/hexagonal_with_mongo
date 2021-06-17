@@ -1,4 +1,4 @@
-package com.hexagonal.infrastructure.db.mongodb.repository;
+package com.hexagonal.infrastructure.queue.kafka.producer.repository;
 
 
 import com.hexagonal.infrastructure.db.mongodb.model.KafkaExampleEventEntity;
