@@ -9,12 +9,17 @@ We need to:
     Create Account in MongoDB
 
 # Run in Intellij:
+
 spring-boot:run -Dspring-boot.run.fork=false
+
 profile: local
 
 # Run Kafka:
+
 $ bin/zookeeper-server-start.sh config/zookeeper.properties
+
 $ bin/kafka-server-start.sh config/server.properties
+
 
 # Endpoint:
 
