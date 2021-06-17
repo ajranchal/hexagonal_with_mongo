@@ -4,7 +4,7 @@ kafka:
   bootstrap-address: localhost:9092
   consumer:
     bootstrap-servers: localhost:9092
-    group-id: group_id
+    group-id: <put here the group id of kafka>
     auto-offset-reset: earliest
     key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
     value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
@@ -12,12 +12,12 @@ kafka:
     bootstrap-servers: localhost:9092
     key-serializer: org.apache.kafka.common.serialization.StringSerializer
     value-serializer: org.apache.kafka.common.serialization.StringSerializer
-  topic-name: example
+  topic-name: <put here the topic>
 mongodb:
   config:
-    user: test
-    password: <>
-    database: initial
+    user: <put here your user>
+    password: <put here your password>
+    database: <put here the name of your bd>
     port: 27017
-    url: <>
+    url: <put here your mongo url>
 
