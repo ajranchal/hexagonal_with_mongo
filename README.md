@@ -31,20 +31,22 @@ GET - http://localhost:9000/hello/world/ESP
 
 # Resources:
 
-MongoDB:
+## MongoDB:
     Tutorial:
-    - https://www.baeldung.com/spring-data-mongodb-tutorial
+    https://www.baeldung.com/spring-data-mongodb-tutorial
 
-Kafka
-    Download and start kafka in local:
-    - https://www.confluent.io/blog/set-up-and-run-kafka-on-windows-linux-wsl-2/#download-kafka
+## Kafka
     
-    - https://kafka.apache.org/quickstart
+    Download and start kafka in local:
+    
+    https://www.confluent.io/blog/set-up-and-run-kafka-on-windows-linux-wsl-2/#download-kafka
+    
+    https://kafka.apache.org/quickstart
     
     Create a Consumer & Producer in Spring boot:
     
-    - https://www.confluent.io/blog/apache-kafka-spring-boot-application/?utm_medium=sem&utm_source=google&utm_campaign=ch.sem_br.nonbrand_tp.prs_tgt.kafka_mt.mbm_rgn.emea_lng.eng_dv.all_con.kafka-spring&utm_term=%2Bkafka%20%2Bspring&creative=&device=c&placement=&gclid=Cj0KCQjw5auGBhDEARIsAFyNm9ERv1MV5Bv-0pQpWhct1LbUmlUMO68eZGv40WcYj8um-N0xhPpqz2saAnVYEALw_wcB
+    https://www.confluent.io/blog/apache-kafka-spring-boot-application/?utm_medium=sem&utm_source=google&utm_campaign=ch.sem_br.nonbrand_tp.prs_tgt.kafka_mt.mbm_rgn.emea_lng.eng_dv.all_con.kafka-spring&utm_term=%2Bkafka%20%2Bspring&creative=&device=c&placement=&gclid=Cj0KCQjw5auGBhDEARIsAFyNm9ERv1MV5Bv-0pQpWhct1LbUmlUMO68eZGv40WcYj8um-N0xhPpqz2saAnVYEALw_wcB
     
-    - https://www.baeldung.com/spring-kafka
+    https://www.baeldung.com/spring-kafka
     
-    - https://github.com/eugenp/tutorials/tree/45e1bb2b1d494a5babc3647d8c1828acdcbbe1ad/spring-kafka
+    https://github.com/eugenp/tutorials/tree/45e1bb2b1d494a5babc3647d8c1828acdcbbe1ad/spring-kafka
